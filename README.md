@@ -55,14 +55,4 @@ Input \<div\>									Output \<div\>
 -.-. --- ..-. -.-.   .-. --- -.-. -.- ...			COFC ROCKS
 
 
-
-## emailverify.html
-
-Create a webpage that has an input \<div\>, an output \<div\>, and a button that when clicked it processes the text in the input \<div\> and places the results in the output \<div\>.
-  * Processing means: check to see if the input \<div\> contains a valid email address, which means:
-    * One or more characters followed by an @ followed by one or more characters followed by a dot (.) followed by one or more characters.
-  * If the email address is valid display a smiley face pic in the output \<div\>. 
-  * If the email address is not valid display a frowny face pic in the output \<div\>
-
-
 THIS IS INDIVIDUAL WORK ONLY. IF I SUSPECT THE CODE IS NOT YOURS, YOU WILL NEED TO COME TO MY OFFICE TO TAKE A VERBAL TEST ON THE CODE YOU SUBMITTED.
