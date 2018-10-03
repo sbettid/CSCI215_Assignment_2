@@ -1,6 +1,6 @@
 # CSCI215_Assignment_2
 
-## Due 12 Oct 2017 @ 11:59 pm
+## Due 14 Oct 2018 @ 11:59 pm
 
 The purpose of this assignment is for you to get practice doing “generic” programming activities using JavaScript. Each problem is worth 20% of the grade. You need to:
 * Create separate .html files for each of the following JavaScript programming problems below. 
