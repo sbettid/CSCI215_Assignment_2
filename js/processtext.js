@@ -4,12 +4,15 @@
     Process text task
  */
 
+var result = "";
+
 function process(){
 
     //get the input text
     var inputText = document.getElementsByName("inputText")[0].value;
 
     var outputDiv = document.getElementById("output"); // get the output div
+    outputDiv.innerText = ""; //Clear potentially old content
 
     inputText = inputText.replace(/[.,;:!?]/gi, ""); // Use a regular expression to eliminate punctuation
 
@@ -31,11 +34,25 @@ function process(){
 
     }
 
+    //For each entry of the map call the printMapElements function
     wordsMap.forEach(printMapElements);
 
-    //TODO: build string and add to output div
+    //Create paragraph element
+    var pNode = document.createElement("p");
+    var pText = document.createTextNode(result); // create text content equal to the generated string
+
+    pNode.appendChild(pText); //append text to node
+    outputDiv.appendChild(pNode); //append node to output div
+
+    result = ""; //clear string
+
 }
 
+//Auxiliary function that takes as input value, key and map (unused but required) and add them to the
+//result string
 function printMapElements(value, key, map){
-    console.log(key + ": " + value);
+
+    console.log(key + ": " + value); //used for debug purposes
+
+    result += key + ": " + value + " ";
 }
