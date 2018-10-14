@@ -54,5 +54,5 @@ function printMapElements(value, key, map){
 
     console.log(key + ": " + value); //used for debug purposes
 
-    result += key + ": " + value + " ";
+    result += key + " " + value + " ";
 }

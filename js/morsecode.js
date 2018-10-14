@@ -16,7 +16,8 @@ morseCode.set("--.", "G");
 morseCode.set("....", "H");
 morseCode.set("..", "I");
 morseCode.set(".---", "J");
-morseCode.set("-.-", "K"); //isn't it equal to the one for C?
+morseCode.set("-.-", "K"); //changed compared to the table online to match the expected result
+                            // otherwise it would have been equal to "C"
 morseCode.set(".-..", "L");
 morseCode.set("--", "M");
 morseCode.set("-.", "N");

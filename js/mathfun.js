@@ -63,6 +63,9 @@ do{
     //Next number!
 } while(input != -1);
 
+//If we have no numbers set the mean to 0 to be consistent with the other numbers displayed
+if(numbers.length == 0)
+    min = 0;
 //Calculate mean only if we have numbers
 if(count > 0)
     mean = mean / (count);
@@ -77,7 +80,9 @@ numbers.sort(function (a,b) {
 //if we have an odd number of integers just take the one in the middle
 var median = 0;
 
-if(numbers.length % 2 != 0)
+if(numbers.length == 0)
+    median = 0;     //if we have no numbers
+else if(numbers.length % 2 != 0)
     median = numbers[(numbers.length-1)/2];
 else{ // add the two numbers in the middle and divide by two
 
